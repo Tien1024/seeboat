@@ -12,7 +12,7 @@ namespace FeatherBoardToTheCloud
        // private string KeyToStorageAccount;
         //private string NameOfDataTable;
 
-        public static CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=tealseeboateeststorage;AccountKey=F5GnHieen8Az50v0oR9cIkf7AywiF1O9vQI53TyNy4GqnpbFmzOrM1ztQ+NWf8ph/GfnQyrXe9usjY/tJBHIRA==;EndpointSuffix=core.windows.net");
+        public static CloudStorageAccount cloudStorageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=tealseeboateeststorage;AccountKey=<insertKeyHere>;EndpointSuffix=core.windows.net");
         public static CloudTableClient tableClient = cloudStorageAccount.CreateCloudTableClient();
 
         public CloudTable CloudDataTable = tableClient.GetTableReference("TestSeeboatData");
